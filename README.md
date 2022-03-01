@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Anup
-- 👀 I’m interested in microcontrollers, web development and IOT
-- 🌱 I’m currently learning django
+- 👀 I’m interested in embedded systems, machine learning, web development and IOT
+- 🌱 I’m currently learning python
 - 📫 You can reach me on anpmht@gmail.com
 
 <!---
