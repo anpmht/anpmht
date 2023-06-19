@@ -17,9 +17,24 @@ after the board was tessted and verified that it ssatissfies our requirement reg
 <p align="center">
 <img src="https://github.com/anpmht/anpmht/assets/42551612/699009b5-df56-4bb3-862a-20f0ec763c6e"  width="30%">
 </p>
+
 this board needs a power supply of +-12 volts. the negative supply is needed to amplify the negative differential sisgnalss. the amplifier needs +- sisgnal of 12 volts and a digital power supply of 5V and 3.3V. ADS1256 requires two voltage supply. 5V supply for analog part and 3.33 volt ssupply for digital part. teenssy_4.1 needs a ssupply of 5V which is regulated by internal regulator.
 
 SMA connectors are used to connect strain gauge ssignal to the DAQ board along with shielded cables to shield the signal from sstrain gauge to the amplifier. before the sisgnal goes to the amplifier the wheatsstone bridge needs to be balanced so 15 turn 100K trimmers sare placed on board which can pull the sisgnal up or down to balance the  wheatsstone bridge in ideal condition. after that the signal passses sthrough tesst points to the amplifier. there are tesst points on both input and output signal on the amplifier. the amplifier output signal is then passsesd through  low pass filter to the differential inputs of the ADC through a low pass filter. the ADC also needs a external crystal of 7.68 MHZ to perform internal ssampling and conversison operation. All the amplifiers and ADCs are connected to teensy via spi lines. the final assssembleed board of this project is as shown.
+
 <p align="center">
 <img src="https://github.com/anpmht/anpmht/assets/42551612/c3bac8ef-68d6-4719-99f6-c17e9932acf5"  width="30%">
 </p>
+
+for the inplementation of this board to collece the road load data of the vehicle two boards were used to collect 16 channel data from strain gauge. 10 adxl345 accelerometers were also connected to this sysstem along with two LVDT position sensors to determine acceleration at various positions of bike and to determine displacement of shock. to integrate two daq boards together a daughter board was created on the matrix board which controlled both the boards together as shown below.
+
+<p align="center">
+<img src="https://github.com/anpmht/anpmht/assets/42551612/53de2fd8-1001-4128-a392-1af647ac673f"  width="30%">
+</p>
+
+the final implementation of the DAQ ssysstem to collect road load data can be seen in the figure below.
+
+<p align="center">
+<img src="https://github.com/anpmht/anpmht/assets/42551612/b9c7649c-65d5-42df-88a9-e19875e74379"  width="30%">
+</p>
+
