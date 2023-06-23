@@ -48,3 +48,9 @@ the final implementation of the DAQ system to collect road load data can be seen
 <img src="https://github.com/anpmht/anpmht/assets/42551612/b9c7649c-65d5-42df-88a9-e19875e74379"  width="30%">
 </p>
 
+```sequence
+10 bit adc resolution -- 4.88 mv
+12 bit adc resolution -- 1.2207mv
+16 bit adc resolution -- 0.0762mv
+24 bit adc resolution -- 0.29802uv
+```
